@@ -1,0 +1,14 @@
+This project includes shader code derived from the Slug reference implementation:
+
+  https://github.com/EricLengyel/Slug
+
+  Copyright 2017 Eric Lengyel
+  Licensed under the MIT License OR Apache License, Version 2.0
+  (at your option)
+
+  See https://opensource.org/licenses/MIT
+  See https://www.apache.org/licenses/LICENSE-2.0
+
+The derived files are:
+  shaders/glyph.vert
+  shaders/glyph.frag

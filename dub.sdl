@@ -1,0 +1,18 @@
+name "toy-font-renderer"
+description "Slug algorithm based GPU font renderer"
+authors "Hiroki Noda"
+copyright "Copyright 2026, Hiroki Noda"
+license "MIT"
+targetType "executable"
+sourcePaths "source"
+importPaths "source"
+
+dependency "erupted" version="~>2.1"
+dependency "bindbc-glfw" version="~>1.1"
+
+versions "GLFW_34"
+
+libs "glfw" "vulkan" "harfbuzz" platform="linux"
+
+preBuildCommands "glslangValidator -V shaders/glyph.vert.glsl -o shaders/glyph.vert.spv" \
+                 "glslangValidator -V shaders/glyph.frag.glsl -o shaders/glyph.frag.spv"

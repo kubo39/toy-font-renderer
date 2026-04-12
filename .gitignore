@@ -1,0 +1,3 @@
+shaders/*.spv
+docs/
+toy-font-renderer
