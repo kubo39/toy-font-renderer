@@ -2,7 +2,7 @@
 module vulkan.context;
 
 import erupted;
-import erupted.vulkan_lib_loader : loadVulkanLib, loadGlobalLevelFunctions;
+import erupted.vulkan_lib_loader : loadGlobalLevelFunctions;
 import bindbc.glfw;
 import std.string : toStringz;
 import std.conv : to;
@@ -72,8 +72,6 @@ struct VulkanContext
 
 VulkanContext createVulkanContext(GLFWwindow* window, uint width, uint height)
 {
-    // Load Vulkan library and GLFW Vulkan extensions
-    loadVulkanLib();
     loadGlobalLevelFunctions();
     loadGLFW_Vulkan();
 
